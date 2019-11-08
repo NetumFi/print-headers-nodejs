@@ -1,3 +1,11 @@
+
+ifdef VERSION
+	export VERSION=$(VERSION)
+else
+	export VERSION=latest
+endif
+
+
 .PHONY: all
 all: intro build
 
