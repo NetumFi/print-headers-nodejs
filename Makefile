@@ -30,5 +30,5 @@ clean-run:
 	docker rm -f print-headers-nodejs
 
 .PHONY: release
-release:
+release: build
 	docker push ${REGISTRY}netum/print-headers-nodejs:${VERSION}
