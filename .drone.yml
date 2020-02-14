@@ -9,4 +9,4 @@ steps:
       - name: docker_sock
         path: /var/run/docker.sock
     commands:
-      - docker build --no-cache -t print-headers-nodejs .
+      - docker build -t print-headers-nodejs:1.0.0.0 .
